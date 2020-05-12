@@ -38,7 +38,7 @@ class UserController extends Controller
             "email" => "required|email|unique:users,email",
             "password" => "required|min:6|max:50",
             "phone" => "required",
-            "address" => "required|min:6|max:50"
+            "address" => "required|max:50"
         ]);
         \DB::beginTransaction();
         $user = new User();

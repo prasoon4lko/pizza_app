@@ -176,20 +176,6 @@ class Header extends Component {
           />
         </div>
 
-        {isAdmin && (
-          <div>
-            <Tab activeClassName="active" to="/menu">
-              Food Menu
-            </Tab>
-            <Tab activeClassName="active" to="/categories">
-              Categories List
-            </Tab>
-            <Tab activeClassName="active" to="/orders">
-              Order History
-            </Tab>
-          </div>
-        )}
-
         <div>{leftItems}</div>
       </HeaderContainer>
     );
