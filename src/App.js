@@ -13,10 +13,6 @@ import Search from './views/Search';
 import Confirmation from './views/Confirmation';
 import Login from './views/Login';
 import SignUp from './views/SignUp';
-//import FoodMenu from './views/FoodMenu';
-//import CategoriesList from './views/CategoriesList';
-//import OrdersHistory from './views/OrdersHistory';
-
 import icons from './selection.json';
 import User from './models/User';
 
@@ -89,9 +85,6 @@ class App extends PureComponent {
             path="/register"
             component={() => <SignUp {...this.props} getHeaderRef={this.getHeaderRef} />}
           />
-          {/*<AuthRoute admin redirect={redirect} path="/menu" component={FoodMenu} />*/}
-          {/*<AuthRoute admin redirect={redirect} path="/categories" component={CategoriesList} />*/}
-          {/*<AuthRoute admin redirect={redirect} path="/orders" component={OrdersHistory} />*/}
           <AuthRoute redirect={redirect} path="/" exact component={Home} />
           <AuthRoute redirect={redirect} path="/results" component={Search} />
           <AuthRoute redirect={redirect} path="/confirmation" component={Confirmation} />
